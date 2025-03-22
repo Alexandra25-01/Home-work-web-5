@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Git - всему голова!</title>
-      <link rel="stylesheet" type="text/css" href="../css/style.css">
-      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
-      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-      <!--Card-->
-      <div class="card">
-         <p class="subtitle">Git</p>
-          <ul>
-            <li>ls - расшифровывается как "List files in the directory", что переводится как "перечислить все файлы в папке" или "вывести на экран список файлов в папке".</li>
-            <li>cd - расшифровывается как "Change directory", что переводится как "сменить папку" или "перейти в другую папку".</li>
-            <li>pwd - расшифровывается как "Present working directory", что переводится как "текущая рабочая директория". То есть команда pwd показывает, в какой сейчас папке мы находимся. </li>
-            <li>mkdir - расшифровывается как "Make directory", что переводится как "создать папку".</li>
-            <li>mv - расфшифровывается как"Move", что переводится как "переместить", "передвинуть". С помощью нее можно переместить, переименовать или удалить файл/</li>
-         </ul>
-      </div>
-      <!--footer-->
-      <footer class="animated fadeIn">
-         <p class="location" align="center">
-            <a href="mac.html">Вернуся на главную</a>
-         </p>
-         &copy; 202 4. SkyPro
-      </footer>
-   </body>
+  <head>
+    <title>Git - всему голова!</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!--Card-->
+    <div class="card">
+      <p class="subtitle">Git</p>
+      <ul>
+        <li>
+          git add - добавление файлов в индекс. Если вы создадите в проекте
+          файл, то Git его посчитает неотслеживаемым (untracked). Такие файлы
+          нельзя перенести в репозиторий без подготовки к сохранению. Поэтому
+          файлы необходимо перенести в индекс.
+        </li>
+        <li>
+          git status - проверка статуса репозитория. Команда git status даёт
+          представление о текущем состоянии репозитория. Она показывает, какие
+          неотслеживаемые файлы попали в проект, какие файлы находятся в индексе
+          и какие сохранённые файлы вы изменили в репозитории.
+        </li>
+        <li>
+          git commit -m "Название коммита" - добавление файлов в репозиторий.
+          После того все файлы подготовлены к сохранению, эта команда переносит
+          файлы из индекса в репозиторий.
+        </li>
+        <li>
+          git push - отправка изменений в удалённый репозиторий. Команда
+          загружает изменения из локального репозитория в удалённый.
+        </li>
+        <li>
+          git pull - получение изменений из удалённого репозитория.Команда
+          скачивает изменения из удалённого репозитория в локальный.
+        </li>
+      </ul>
+    </div>
+    <!--footer-->
+    <footer class="animated fadeIn">
+      <p class="location" align="center">
+        <a href="../index.html">Вернуться на главную</a>
+      </p>
+      &copy; 2024. SkyPro
+    </footer>
+  </body>
 </html>
